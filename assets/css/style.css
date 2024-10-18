@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Chillax-Variable';
+    src: url('/assets/fonts/Chillax-Variable.woff2') format('woff2'),
+         url('/assets/fonts/Chillax-Variable.woff') format('woff'),
+         url('/assets/fonts/Chillax-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+body{
+    margin: auto;
+    background-color: #383942;
+}
+
+.navbar{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow
+}
+
+.navbar img{
+    width: 75px;
+    margin-left: 10px;
+}
+
+.navlinks{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar a{
+    justify-content: space-evenly;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-family: 'Chillax-Variable';
+    font-weight: 500;
+    font-size: 48px;
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        margin: 5%;
+    }
+    
+    .navbar a{
+        margin-top: auto;
+        color: red;
+        text-decoration: none;
+        font-size: 22px;
+    }
+}
