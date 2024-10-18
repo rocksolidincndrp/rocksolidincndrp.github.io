@@ -11,45 +11,215 @@
 body{
     margin: auto;
     background-color: #383942;
-}
-
-.navbar{
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: yellow
-}
-
-.navbar img{
-    width: 75px;
-    margin-left: 10px;
-}
-
-.navlinks{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.navbar a{
-    justify-content: space-evenly;
-    margin: auto;
-    color: white;
-    text-decoration: none;
     font-family: 'Chillax-Variable';
-    font-weight: 500;
-    font-size: 48px;
 }
 
 
+/*NAVIGATION*/
+.navlogo{
+    margin-left: 0px;
+    width: 75px;
+}
+
+.nav {
+    width: 100%;
+    background-color: #383942;
+    display: flex;
+    align-items: center;
+    position: fixed;
+  }
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+
+  .nav-title{
+    display: flex;
+  }
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+    font-size: 24px;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: #23242E;
+    cursor: pointer;
+    transition: all 0.275s;
+  }
+  .nav > #nav-check {
+      display: none;
+  }
+
+  .nav > .nav-list > li a:hover{
+    color: white;
+  }
+
+  /*INTRO*/
+  .intro{
+    text-align: center;
+    background-color: #303030;
+    margin: 0px;
+  }
+
+  .intrologo{
+    width: 500px;
+    filter: drop-shadow(black 1px 1px 15px);
+  }
+
+  .intro h1{
+    color: white;
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: 48px;
+  }
+
+  .breakmobile{
+    display: none;
+  }
+/*SERVICES CARDS*/
+  .services{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+  }
+
+  .card{
+    width: 25%;
+    padding: 25px;
+    background-color: #3030306b;
+    border: solid #303030 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .fa-solid{
+    font-size: 50px;
+  }
+
+  .learnmore{
+    width: 100%;
+    font-family: 'Chillax-Variable';
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: solid #FFFFFF 2px ;
+    background: none;
+    color: white;
+    transition: all 0.275s;
+  }
+
+  .learnmore:hover{
+    background-color: #303030;
+    cursor: pointer;
+  }
+/*ABOUT US*/
+.aboutus{
+    color: white;
+    text-align: center;
+    background-color: #303030;
+    h1{ margin: 5px; font-size: 48px;}
+    p{ margin: 5px; font-size: 24px;}
+}
+
+.aboutuslogo{
+    margin: 0;
+    width: 125px;
+    filter: drop-shadow(black 1px 1px 5px);
+}
+
+/*MOBILE*/  
 @media only screen and (max-width: 600px){
-    body{
-        margin: 5%;
+/*NAVIGATION*/   
+    .navlogo{
+        margin: 0px;
+        width: 50px;
     }
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-list {
+        margin-top: 1rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        height: 0;
+        transition: all 0.25s;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+        z-index: 99999;
+      }
+      .nav > .nav-list > li {
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+      .nav > #nav-check:checked ~ .nav-list {
+        height: calc(100vh - 50px);
+      }
+/*INTRO*/
+      .intrologo{
+        width: 250px;
+        filter: drop-shadow(black 0px 1px 15px);
+      }
+
+      .intro h1{
+        color: white;
+        font-weight: 300;
+        margin-top: 0px;
+        font-size: 24px;
+      }
+
+      .breakmobile{
+        display: block;
+      }
+/*SERVICES CARDS*/
+      .services{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        gap: 25px;
+      }
     
-    .navbar a{
-        margin-top: auto;
-        color: red;
-        text-decoration: none;
-        font-size: 22px;
-    }
+      .card{
+        margin: auto;
+        width: 75%;
+      }
+
+/*ABOUT US*/
+.aboutus{
+    color: white;
+    text-align: center;
+    background-color: #303030;
+    h1{ margin: 5px; font-size: 36px;}
+    p{ margin: 5px; font-size: 18px;}
+    img{width: 75px;}
+}
 }
