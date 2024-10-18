@@ -138,16 +138,54 @@ body{
     text-align: center;
     background-color: #303030;
     h1{ margin: 5px; font-size: 48px; font-weight: 500;}
-    p{ margin: 5px; font-size: 24px; font-weight: 200;}
+    p{ margin: 5px; font-size: 24px; font-weight: 300;}
 }
 
 .aboutuslogo{
     margin: 0;
     width: 125px;
     filter: drop-shadow(black 1px 1px 5px);
+    text-align: center;
 }
 
+/*HIRING*/
 
+.hiring{
+    text-align: center;
+    color: white;
+    h1{ margin: 5px; font-size: 48px; font-weight: 500;}
+    p{ margin: 5px; font-size: 24px; font-weight: 300;}
+    a{ color: white ;}
+}
+
+.hiring ul{
+    list-style: inside;
+    list-style-type: circle;
+    font-size: 24px; 
+    font-weight: 300;
+    text-align: left;
+}
+
+.learnmorecareers{
+    width: 25%;
+    border-radius: 5px;
+    border: solid #FFFFFF 2px ;
+    background: none;
+    transition: all 0.275s;
+  }
+
+  .learnmorecareers a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Chillax-Variable';
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .learnmorecareers:hover{
+    background-color: #303030;
+    cursor: pointer;
+  }
 
 /*MOBILE*/  
 @media only screen and (max-width: 600px){
@@ -237,5 +275,9 @@ body{
     h1{ margin: 5px; font-size: 36px;}
     p{ margin: 5px; font-size: 18px;}
     img{width: 75px;}
+}
+/*CAREERS*/
+.learnmorecareers{
+    width: 75%;
 }
 }
