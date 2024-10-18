@@ -27,6 +27,7 @@ body{
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 99999999;
   }
   .nav > .nav-header {
     flex: 0.95;
@@ -184,6 +185,7 @@ body{
       }
 /*INTRO*/
       .intrologo{
+        margin-top: 25px;
         width: 250px;
         filter: drop-shadow(black 0px 1px 15px);
       }
