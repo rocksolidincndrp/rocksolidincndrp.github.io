@@ -59,6 +59,10 @@ body{
     color: white;
   }
 
+  #selected{
+    color: white;
+  }
+
   /*INTRO*/
   .intro{
     text-align: center;
@@ -108,7 +112,7 @@ body{
     width: 100%;
     font-family: 'Chillax-Variable';
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 5px;
     border: solid #FFFFFF 2px ;
     background: none;
@@ -134,6 +138,8 @@ body{
     width: 125px;
     filter: drop-shadow(black 1px 1px 5px);
 }
+
+
 
 /*MOBILE*/  
 @media only screen and (max-width: 600px){
