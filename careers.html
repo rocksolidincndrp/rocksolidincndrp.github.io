@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/68e5b1204c.js" crossorigin="anonymous"></script>
     <script defer src="/assets/js/app.js"></script>
+    <script defer src="/assets/js/webhook.js"></script>
 </head>
     <body>
       <div class="desktopnav">
@@ -26,7 +27,32 @@
         </nav>
     </div>
     <div class="headergap"></div> 
-    <footer>
+
+
+    <div class="contactbody">
+    <div class="contactform">
+        <form onsubmit="sendform(event)">
+              <label for="Collaboration1" class="form-label">What is your name?</label>
+              <textarea required class="form-control" id="Question1"></textarea>
+              <br>
+              <label for="Collaboration1" class="form-label">What is your phone number?</label>
+              <textarea required class="form-control" id="Question2"></textarea>
+              <br>
+              <label for="Collaboration1" class="form-label">Position you are applying for</label>
+              <textarea required class="form-control" id="Question3"></textarea>
+              <br>
+              <label for="Collaboration1" class="form-label">Interview availability</label>
+              <textarea required class="form-control" id="Question4"></textarea>
+              <br>
+              <label for="Collaboration1" class="form-label">Tell us a fun fact about yourself</label>
+              <textarea required class="form-control" id="Question5"></textarea>
+              <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        
+    </div>
+        <footer>
         <h1>&copy;:RockSolidInc.</h1>
         <img class="footerlogo" src="/assets/img/250 rocksolidw.png" alt="">
         <p>Designed by Von Hendrix</p>
