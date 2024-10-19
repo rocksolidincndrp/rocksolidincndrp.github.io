@@ -6,31 +6,29 @@
     <title>Rock Solid - Home</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/68e5b1204c.js" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/app.js"></script>
 </head>
     <body>
-        <nav class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                <img class="navlogo"  src="/assets/img/250 rocksolidw.png" alt="">
-            </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <ul class="nav-list">
-                <li><a id="selected" href="index.html">Home</a></li>
+        <div class="desktopnav">
+        <div class="navheader">
+            <img class="nav-logo" src="/assets/img/250 rocksolidw.png" alt="">
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+        </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a id="activepage" href="index.html">Home</a></li>
                 <li><a href="ourwork.html">Our Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="careers.html">Careers</a></li>
             </ul>
-          </nav>
-          <div class="intro">
+        </nav>
+    </div>
+    <div class="headergap"></div>
+
+
+        <div class="intro">
             <img class="intrologo" src="/assets/img/White logo.png" alt="">
             <h1>Graphic Design <br class="breakmobile"> Web Development</h1>
           </div>
@@ -58,9 +56,9 @@
 
           <div class="aboutus">
             <h1>About us</h1>
+            <img class="aboutuslogo" src="/assets/img/250 rocksolidw.png" alt="">
             <p>Rock Solid incorporated was founded in October of 2024 by Von Hendrix. The idea for the company started from his independent work for friends as a graphics designer and web developer. Eventually the decision was made to turn his hobby/passion into a fully fleshed business everyone could benefit from. Rock Solid Incorporated, aims to work closley with all of it's customers, enabling the designers and developers to create websites that encapsule the "aesthetic" that a client is aiming for.</p>
             </div>
-            <img class="aboutuslogo" src="/assets/img/250 rocksolidw.png" alt="">
         <div class="hiring">
             <h1>Careers</h1>
             <p>We are currently hiring! Please reach out <a href="careers.html">here</a> or head over to our careers page to apply. <br> At this time the positions we are looking to fill are:</p>
