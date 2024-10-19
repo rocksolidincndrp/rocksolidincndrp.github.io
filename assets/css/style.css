@@ -303,7 +303,8 @@ footer{
 /*NAVIGATION*/   
 
 body{
-  margin: auto;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .headergap{
