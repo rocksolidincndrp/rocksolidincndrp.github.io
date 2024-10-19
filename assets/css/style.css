@@ -302,11 +302,6 @@ footer{
 @media only screen and (max-width: 600px){
 /*NAVIGATION*/   
 
-body{
-  width: 296px;
-}
-
-
 .headergap{
     margin-top: 55px;
 }
