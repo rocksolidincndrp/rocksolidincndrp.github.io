@@ -311,7 +311,7 @@ footer{
     button {display: block;}
     margin: auto;
     width: 100%;
-    img{width: 20%;}
+    img{width: 20%  !important; height:20% !important; margin-top: auto; margin-bottom: auto;}
 	  position: fixed;
     background-color: #383942;
     z-index: 999999;
@@ -583,5 +583,9 @@ footer{
 .btn-primary:hover{
   background-color: #383942;
   cursor: pointer;
+}
+
+footer{
+  img{width: 25px !important; margin: 0px;}
 }
 }
