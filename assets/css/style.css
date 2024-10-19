@@ -17,8 +17,8 @@ body{
     margin: auto;
     background-color: #383942;
     font-family: 'Chillax-Variable';
+    color: white;
 }
-
 
 /*NAVIGATION*/
 
@@ -200,6 +200,10 @@ body{
 
 /*Portfolio*/
 
+.outwork{
+  text-align: center;
+}
+
 .webdev{
     display: flex;
     justify-content: space-around;
@@ -208,6 +212,10 @@ body{
 .webdevcard{
     width: 350px;
     text-align: center;
+}
+
+.webdevcard a{
+color: white;
 }
 
 .site{
@@ -498,6 +506,25 @@ body{
 /*CAREERS*/
 .learnmorecareers{
     width: 50%;
+}
+
+
+/*OURWORK*/
+
+.outwork{
+  margin: auto;
+  width: 90%;
+}
+
+.webdev{
+  display: block;
+  margin: auto;
+  iframe{display: none;}
+}
+
+.webdevcard{
+  margin: auto;
+  width: 90%;
 }
 
 /*Contact us*/
