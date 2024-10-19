@@ -302,6 +302,10 @@ footer{
 @media (max-width: 800px){
 /*NAVIGATION*/   
 
+body{
+  margin: auto;
+}
+
 .headergap{
     margin-top: 55px;
 }
@@ -311,13 +315,17 @@ footer{
     button {display: block;}
     margin: auto;
     width: 100%;
-    img{width: 20%  !important; height:20% !important; margin-top: auto; margin-bottom: auto;}
 	  position: fixed;
     background-color: #383942;
     z-index: 999999;
     display: flex;
     justify-content: space-between;   
 }
+
+.navheader img{
+  width: 20%  !important; 
+  margin-top: auto; 
+  margin-bottom: auto;}
 
 .main-nav {
 	z-index: 9999999999;
@@ -515,7 +523,11 @@ footer{
 .webdev{
   display: block;
   margin: auto;
-  iframe{display: none;}
+}
+
+.webdev iframe{
+  display: none !important; 
+  visibility: hidden;
 }
 
 .webdevcard{
@@ -585,7 +597,7 @@ footer{
   cursor: pointer;
 }
 
-footer{
-  img{width: 25px !important; margin: 0px;}
-}
+footer img{
+  width: 25px !important; 
+  margin: 0px;}
 }
