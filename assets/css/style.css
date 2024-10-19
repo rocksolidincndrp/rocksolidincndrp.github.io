@@ -312,6 +312,7 @@ body{
 }
 
 .navheader{
+    left: 0;
     button {display: block;}
     margin: auto;
     width: 100%;
