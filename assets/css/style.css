@@ -196,9 +196,32 @@ body{
     cursor: pointer;
   }
 
+/*OURWORK*/
+.portfolios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 125px;
+  gap: 125px;
+}
+
+.person{
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid #303030 3px;
+}
+
+.portrait{
+  border-radius: 100%;
+  width: 250px;
+}
 
 
-/*Our work*/
+/*Portfolio*/
 
 .webdev{
     display: flex;
@@ -215,6 +238,8 @@ body{
     height: 750px;
     border: solid #303030;
 }
+
+
 
 /*Footer*/
 footer{
