@@ -307,7 +307,7 @@ body{
     button {display: block;}
     margin: auto;
     width: 100%;
-    img{width: 75px; margin-left: 5px;}
+    img{width: 20%; margin-left: 5px;}
 	  position: fixed;
     background-color: #383942;
     z-index: 999999;
