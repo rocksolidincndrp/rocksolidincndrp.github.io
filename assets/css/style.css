@@ -118,8 +118,6 @@ body{
     margin-top: 50px;
 }
 
-
-
   .fa-solid{
     font-size: 50px;
   }
@@ -198,7 +196,7 @@ body{
     cursor: pointer;
   }
 
-/*Portfolio*/
+/*OUR WORK*/
 
 .outwork{
   text-align: center;
@@ -286,6 +284,110 @@ color: white;
   background-color: #383942;
   cursor: pointer;
 }
+
+/*PRICE*/
+
+/*SERVICES CARDS*/
+.pricebreak{
+  height: 5px;
+  width: 50%;
+  background-color: white;
+}
+
+.prices-main h1{
+  font-size: 64px;
+  text-align: center;
+}
+
+.pricing{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+.blackbg{
+  background-color: #303030;
+}
+
+.headergap h1{
+  visibility: hidden;
+}
+
+.pricing h1{
+  font-weight: 500;
+}
+.center h1{
+  font-size: 42px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center p{
+  font-size: 20px;
+}
+
+.sides h1{
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center{
+  width: 30%;
+  padding: 25px;
+  background-color: #303030;
+  border: solid #23242E 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  filter: drop-shadow(black 1px 1px 5px);
+}
+
+.sides{
+  width: 25%;
+  height: auto;
+  padding: 25px;
+  background-color: #303030;
+  border: solid #23242E 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  filter: drop-shadow(black 1px 1px 5px);
+}
+
+.fa-solid{
+  font-size: 50px;
+}
+
+.learnmore{
+  width: 100%;
+  border-radius: 5px;
+  border: solid #FFFFFF 2px ;
+  background: none;
+  transition: all 0.275s;
+}
+
+.learnmore a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Chillax-Variable';
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.learnmore:hover{
+  background-color: #303030;
+  cursor: pointer;
+}
+
 
 /*Footer*/
 footer{
@@ -601,4 +703,35 @@ body{
 footer img{
   width: 25px !important; 
   margin: 0px;}
+
+  .prices-main{
+    margin: auto;
+    text-align: center;
+  }
+
+  .pricing{
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 25px;
+  }
+
+  .prices-main h1{
+    font-size: 38px;
+  }
+
+  .sides h1{
+    font-size: 32px;
+  }
+
+  .center, .sides{
+    margin: auto;
+    width: 75%;
+  }
+
 }
