@@ -428,7 +428,9 @@ body{
 .navheader img{
   width: 20%  !important; 
   margin-top: auto; 
-  margin-bottom: auto;}
+  margin-bottom: auto;
+  margin-left: 25px;
+}
 
 .main-nav {
 	z-index: 9999999999;
@@ -531,9 +533,10 @@ body{
 }
 
 #burger{
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 	filter: drop-shadow(black 1px 1px 2px);
+  margin-right: 25px;
 }
 
 .burger:after,
