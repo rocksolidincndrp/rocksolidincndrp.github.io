@@ -33,21 +33,58 @@
     <div class="contactbody">
     <div class="contactform">
         <form onsubmit="sendform(event)">
-              <label for="Collaboration1" class="form-label">What is your name?</label>
+              <label for="Question1" class="form-label">What is your name?</label>
               <textarea required class="form-control" id="Question1"></textarea>
               <br>
-              <label for="Collaboration1" class="form-label">What is your phone number?</label>
+              <label for="Question2" class="form-label">What is your phone number?</label>
               <textarea required class="form-control" id="Question2"></textarea>
               <br>
-              <label for="Collaboration1" class="form-label">Position you are applying for</label>
+              <label for="Question3" class="form-label">What is your email? (Discord)</label>
               <textarea required class="form-control" id="Question3"></textarea>
               <br>
-              <label for="Collaboration1" class="form-label">Interview availability</label>
+              <label for="Question4" class="form-label">Tell us a fun fact about yourself</label>
               <textarea required class="form-control" id="Question4"></textarea>
               <br>
-              <label for="Collaboration1" class="form-label">Tell us a fun fact about yourself</label>
+              <label for="Question5" class="form-label">Interview availability</label>
               <textarea required class="form-control" id="Question5"></textarea>
               <br>
+              <label for="Question6" class="form-label">Position you are applying for</label>
+              <div class="custom-select">
+                <select required id="Question6" name="apptype">
+                    <option value="select">Select...</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                  </select>
+                </div>
+              <br>
+              <div id="graphicDesignerDiv" class="hidden">
+                <label for="Question7" class="form-label">How long have you been doing graphic design for?</label>
+                <textarea class="form-control" id="Question7"></textarea>
+                <br>
+                <label for="Question8" class="form-label">What software are you most familiar with and use the most?</label>
+                <textarea class="form-control" id="Question8"></textarea>
+                <br>
+                <label for="Question9" class="form-label">Do you also draw?</label>
+                <textarea class="form-control" id="Question9"></textarea>
+                <br>
+                <label for="Question10" class="form-label">Do you have a portfolio/work you can showcase?</label>
+                <textarea class="form-control" id="Question10"></textarea>
+                <br>
+            </div>
+            <div id="webDeveloperDiv" class="hidden">
+                <label for="Question11" class="form-label">Do you have a portfolio?</label>
+                <textarea class="form-control" id="Question11"></textarea>
+                <br>
+                <label for="Question12" class="form-label">Do you know HTML, Css, JS and other languages?</label>
+                <textarea class="form-control" id="Question12"></textarea>
+                <br>
+                <label for="Question13" class="form-label">Do you use editors like as WixStudio or WordPress?</label>
+                <textarea class="form-control" id="Question13"></textarea>
+                <br>
+                <label for="Question14" class="form-label">What over design tools do you know how to use?</label>
+                <textarea class="form-control" id="Question14"></textarea>
+                <br>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
