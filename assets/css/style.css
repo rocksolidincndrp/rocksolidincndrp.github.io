@@ -18,11 +18,14 @@ body{
     background-color: #383942;
     font-family: 'Chillax-Variable';
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*NAVIGATION*/
 
-.headergap{
+.headergap{ 
     margin-top: 100px;
 }
 
@@ -236,6 +239,15 @@ color: white;
   width: 90%;
 }
 
+.graphicdesign{
+  background-color: #303030;
+  margin-bottom: 0px;
+}
+
+.posters{
+  width: 90%;
+  margin: auto;
+}
 
 /*Contact us*/
 
@@ -470,13 +482,16 @@ color: white;
 }
 
 .learnmore:hover{
-  background-color: #383942;
+  background-color: #303030;
   cursor: pointer;
 }
 
-
+.learnmoreprice:hover{
+  background-color: #383942;
+}
 /*Footer*/
 footer{
+  margin-top: auto;
   background-color: #303030;
   margin-bottom: 0px;
   text-align: center;
@@ -526,6 +541,41 @@ footer img{width: 25px; margin: 0px;}
   transition-delay: 200ms;
 }
 
+.faq{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #303030;
+}
+
+.questiontext{
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.question{
+  background: none;
+  border: none;
+  color: white;
+  transition: 0.275s;
+}
+
+
+
+.question:hover{
+  filter: drop-shadow(white 1px 1px 5px);
+}
+
+.answer{
+  font-size: 24px;
+  background-color: #303030;
+}
+
+.answer a{
+  color: lightblue;
+}
 
 /*MOBILE*/  
 @media (max-width: 800px){
@@ -871,6 +921,18 @@ footer img{
   .center, .sides{
     margin: auto;
     width: 75%;
+  }
+  
+  .question i{
+    font-size: 32px;
+  }
+
+  .questiontext h1{
+    font-size: 18px;
+  }
+  
+  .answer{
+    font-size: 18px;
   }
 
 }

@@ -128,3 +128,25 @@ function closeAllSelect(elmnt) {
 }
 
 document.addEventListener("click", closeAllSelect);
+
+
+
+const buttons = document.querySelectorAll('.question');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        const questionDiv = button.closest('.questiondiv');
+        const answer = questionDiv.querySelector('.answer');
+        const downCaret = button.querySelector('.fa-caret-down');
+        const upCaret = button.querySelector('.fa-caret-up');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            downCaret.style.display = 'none';
+            upCaret.style.display = 'inline';
+        } else {
+            answer.style.display = 'none';
+            downCaret.style.display = 'inline';
+            upCaret.style.display = 'none';
+        }
+    });
+});    
