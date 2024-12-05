@@ -99,6 +99,33 @@ body{
   .breakmobile{
     display: none;
   }
+
+  .emailchain{
+    width: 50%;
+    border-radius: 5px;
+    border: solid #FFFFFF 2px ;
+    background: none;
+    transition: all 0.275s;
+  }
+
+  .emailchain a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Chillax-Variable';
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .emailchain:hover{
+    background-color: #383942;
+    cursor: pointer;
+  }
+
+  .discord{
+    font-size: 28px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
 /*SERVICES CARDS*/
   .services{
     display: flex;
@@ -168,6 +195,7 @@ body{
 .hiring{
     text-align: center;
     color: white;
+    padding: 25px;
 }
 
 .hiring    h1{ margin: 5px; font-size: 48px; font-weight: 500;}
@@ -765,6 +793,14 @@ body{
       .unbreakmobile{
         display: none;
       }
+      .emailchain{
+        width: 80% !important;
+      }
+      .discord{
+        font-size: 14px;
+        margin: 0px;
+      }
+      
 /*SERVICES CARDS*/
       .services{
         padding-top: 50px;
@@ -786,6 +822,7 @@ body{
 .aboutus{
     color: white;
     text-align: center;
+    padding: 5px;
 }
 
 .aboutus h1{ margin: 5px; font-size: 36px;}
@@ -794,7 +831,7 @@ body{
 
 /*CAREERS*/
 .learnmorecareers{
-    width: 50%;
+    width: 80%;
 }
 
 
@@ -803,7 +840,7 @@ body{
 .outwork{
   margin: auto;
   width: 90%;
-  margin-top: 100px;
+  padding: 25px;
 }
 
 .webdev{
