@@ -6,44 +6,7 @@ burger.addEventListener('click', function(e){
 	nav.classList.toggle('is-open');
 });
 
-
-
-const observer = new IntersectionObserver((entries) =>{
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fadeanim');
-        }
-    });
-});
-
-const hidenElements = document.querySelectorAll('.fadein');
-hidenElements.forEach((el) => observer.observe(el))
-
-const observer2 = new IntersectionObserver((entries) =>{
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scaleanim');
-        }
-    });
-});
-
-const hidenElements2 = document.querySelectorAll('.scale');
-hidenElements2.forEach((el) => observer2.observe(el))
-
-const observer3 = new IntersectionObserver((entries) =>{
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('slideanim');
-        }
-    });
-});
-
-const hidenElements3 = document.querySelectorAll('.slidein');
-hidenElements3.forEach((el) => observer3.observe(el))
-
+/*CUSTOM SELECTS*/
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-select");
 l = x.length;
@@ -129,9 +92,8 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener("click", closeAllSelect);
 
-
-
-const buttons = document.querySelectorAll('.question');
+/*FAQ BUTTONS*/
+const buttons = document.querySelectorAll('.questiondiv');
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
@@ -150,3 +112,5 @@ buttons.forEach(button => {
         }
     });
 });    
+
+/*animations*/

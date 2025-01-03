@@ -6,74 +6,89 @@
     <meta http-equiv="Cache-Control" content="must-revalidate">
     <title>Rock Solid - Home</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <script src="https://kit.fontawesome.com/68e5b1204c.js" crossorigin="anonymous"></script>
     <script defer src="/assets/js/app.js"></script>
 </head>
     <body>
         <div class="desktopnav">
         <div class="navheader">
-            <a href="index.html"><img class="nav-logo" src="/assets/img/250 rocksolidw.png" alt=""></a>
+            <a class="nav-logo-link" href="index.html"><img class="nav-logo" src="/assets/img/250 rocksolidw.png" alt=""></a>
         <button id="burger" class="open-main-nav">
             <span class="burger"></span>
         </button>
         </div>
         <nav class="main-nav" id="main-nav">
             <ul>
-                <li><a id="activepage" href="index.html">Home</a></li>
+                <li><a id="activepage"  href="index.html">Home</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="ourwork.html">Our Work</a></li>
+                <!-- <li><a href="ourwork.html">Our Work</a></li> -->
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="careers.html">Careers</a></li>
             </ul>
         </nav>
     </div>
     <div class="headergap"></div>
-
-
-        <div class="intro">
-            <img class="intrologo" src="/assets/img/White logo.png" alt="">
-            <h1>Graphic Design <br class="breakmobile"> <span class="unbreakmobile">&#9900;</span> Web Development</h1>
-            <button class="emailchain"><a href="https://discord.gg/UFHmKBFjhW">Join Our Email</a></button>
-            <p class="discord">https://discord.gg/UFHmKBFjhW</p>
+    <!-- INTRO -->    
+    <div class="intro">
+        <div class="intro-container">
+            <img class="intro-logo" src="/assets/img/White logo.png" alt="">
+            <br>
+            <a href="https://discord.gg/UFHmKBFjhW"><button class="intro-btn-email">JOIN OUR EMAIL CHAIN</button></a>
+            <p><span class="hiddenmobilespan">CLICK THE BUTTON OR COPY THE LINK BELOW<br></span>https://discord.gg/UFHmKBFjhW</p>
         </div>
-        <div class="aboutus">
-            <h1 class="fadein">About us</h1>
-            <img class="aboutuslogo scale" src="/assets/img/250 rocksolidw.png" alt="">
-            <p class="fadein">Rock Solid incorporated was founded in October of 2024 by Von Hendrix. The idea for the company started from his independent work for friends as a graphics designer and web developer. Eventually the decision was made to turn his hobby/passion into a fully fleshed business everyone could benefit from. Rock Solid Incorporated aims to work closely with all of its customers, enabling the designers and developers to create websites that encapsule the "aesthetic" that a client is aiming for.</p>
+    </div>
+    
+    <div class="services">
+        <h1>OUR SERVICES</h1>
+                    <hr class="break-line">
+        <div class="service-cards">
+            <div class="serv-card questionmobile">
+                <div class="card-container">
+                    <h1>LEARN MORE</h1>
+                    <i class="fa-solid fa-circle-question" style="color: #fdfdfd;"></i>
+                    <p>If you are interested in viewing our work, or finding out more about how our business works, please visit our FAQ and Our Work page.</p>
+                    <a href="faq.html"><button class="serv-card-btn">View FAQ</button></a>
+                </div>
             </div>
-          <div class="services">
-            <div class="card slidein">
-                <i class="fa-solid fa-code"></i>
-                <h1>Development</h1>
-                <p>Our web development services provide customers with the possibility to have a website built from the ground up, we offer both desktop and mobile support, and features including e-mail webhooks</p>
-                <button class="learnmore"><a href="pricing.html#webdevprice">View prices</a></button>
+            <div class="serv-card">
+                <div class="card-container">
+                    <h1>DEVELOPMENT</h1>
+                    <i class="fa-solid fa-code" style="color: #fdfdfd;"></i>
+                    <p>Our web development team works create a custom built, fully dynamic website, to suit the needs of each one of our customers.</p>
+                    <a href="pricing.html"><button class="serv-card-btn">Find out more</button></a>
+                </div>
             </div>
-            <div class="card slidein">
-                <i class="fa-solid fa-user"></i>
-                <h1>Our Work</h1>
-                <p>Rock Solid Incorporated is a graphic design and web development business, we offer package deals, contracts and much more. Find out more about us or view our work clicking below.</p>
-                <button class="learnmore"><a href="ourwork.html">Learn More</a></button>
+            <div class="serv-card questiondesktop">
+                <div class="card-container">
+                    <h1>LEARN MORE</h1>
+                    <i class="fa-solid fa-circle-question" style="color: #fdfdfd;"></i>
+                    <p>If you are interested in viewing our work, or finding out more about how our business works, please visit our FAQ and Our Work page.</p>
+                    <a href="faq.html"><button class="serv-card-btn">View FAQ</button></a>
+                </div>
             </div>
-            <div class="card slidein">
-                <i class="fa-solid fa-paintbrush"></i>
-                <h1>Design</h1>
-                <p>We also offer graphic design work of different sorts: advertisements, business cards, posters, album covers and so much more.</p>
-                <button class="learnmore"><a href="pricing.html#gfxprice">View prices</a></button>
+            <div class="serv-card">
+                <div class="card-container">
+                    <h1>GRAPHIC DESIGN</h1>
+                    <i class="fa-solid fa-palette" style="color: #fdfdfd;"></i>
+                    <p>The designers at Rock Solid use a variety of tools, to bring our customers ideas to life. We offer special deals for bulk/business orders.</p>
+                    <a href="pricing.html"><button class="serv-card-btn">Find out more</button></a>
+                </div>
             </div>
-          </div>
-        <div class="hiring">
-            <h1>Careers</h1>
-            <p>We are currently hiring! Please reach out below or head over to our careers page to apply. <br> At this time the positions we are looking to fill are:</p>
-            <ul>
-                <li>Graphic Designers</li>
-                <li>Web Developers</li>
-            </ul>
-            <button class="learnmorecareers"><a href="careers.html">Learn More</a></button>
         </div>
+    </div>
+
+    <div class="aboutus">
+        <h1>About Rock Solid</h1>
+            <hr class="break-line">
+        <p>Rock Solid is web development and graphic design company, founded in October 2024, with a mission to provide innovative and impactful digital solutions for businesses and individuals in the State of San Andreas. Specializing in crafting custom websites and eye-catching graphic designs, we focus on delivering top-tier user experiences, responsive layouts, and visually appealing aesthetics. We understand the diverse needs of San Andreas’ vibrant community and tailor each project to reflect the unique identity of our clients. Whether creating a sleek website for a local business or developing a distinctive brand identity for a new venture, we combine cutting-edge technology with creative expertise to ensure every project stands out. With a commitment to quality and a passion for design, we are dedicated to helping our clients enhance their online presence and grow their brand in the digital age.</p>
+        <a href="https://discord.gg/UFHmKBFjhW"><button class="serv-card-btn">View Our Work</button></a>
+        <p class="underourwork">https://discord.gg/UFHmKBFjhW</p>
+    </div>
+
             <footer>
-                <h1>&copy;:RockSolidInc.</h1>
                 <img class="footerlogo" src="/assets/img/250 rocksolidw.png" alt="">
-                <p>Designed by Von Hendrix</p>
+                <p>&copy;:Rock Solid Inc. - Designed by Von Hendrix</p>
             </footer>
     </body>
 </html>

@@ -1,0 +1,273 @@
+/*Contact us*/
+
+.application-container{
+  width: 84%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.applicationmain{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr); 
+  gap: 25px;
+}
+
+.applicationbox{
+  padding: 2%;
+  text-align: center;
+  border-radius: 5px;
+  border: #fff solid 2px;
+  background-color: #383942;
+  filter: drop-shadow(white 1px 1px 5px);
+}
+.applicationboxh1{font-size: 28px;}
+.applicationbox p{
+  font-size: 24px;
+  text-align: left;
+}
+
+.applicationintro{
+  grid-column: span 4; 
+  grid-row: span 2;
+}
+
+.applicationwebdev{
+  grid-column: span 2; 
+  grid-row: span 2;
+}
+
+.applicationgraphic{
+  grid-column: span 2; 
+  grid-row: span 2;
+}
+
+
+.contactbody{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    filter: drop-shadow(white 1px 1px 5px);
+  }
+  
+  .contactform{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background-color: #383942;
+    padding: 2%;
+    border: #fff solid 2px;
+    border-radius: 5px;
+  }
+  
+  .form-label{
+    font-size: 30px;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .form-control{
+    outline: 0;
+    width: 90%;
+    height: 50px;
+    background: none;
+    border: solid #fff 2px;
+    border-style: none none solid none;
+    font-size: 20px;
+    color: white;
+    resize: none;
+    font-family: 'Chillax-Variable';
+    font-weight: 300;
+  }
+  
+  .form-control:focus{
+    outline: 0;
+    border: solid white 3px;
+    border-style: none none solid none;
+    filter: drop-shadow(#fff 0px 0px 2px);
+  }
+  
+  .btn-primary {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Chillax-Variable';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.7em 2em;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background: none;
+  }
+  
+  .btn-primary:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #fff;
+    z-index: -1;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    color: #303030;
+    font-weight: 600;
+    filter: drop-shadow(#fff 0px 0px 2px);
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover:before, .btn-primary:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.9);
+  }
+  
+  /* The container must be positioned relative: */
+  .custom-select {
+    margin: auto;
+    position: relative;
+    font-size: 24px;
+    background-color: #383942;
+    width: 90%;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: #383942;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    border: solid #fff 2px;
+    border-style: none none solid none;
+    background-color: #383942;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #353535;
+    text-shadow: white 1px 1px 5px;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+  
+@media (max-width: 800px){
+    /*Contact us*/
+
+.application-container{
+  margin-top: 70px;
+  width: 100%;
+}
+.applicationmain{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.applicationbox h1{
+  font-size: 24px;
+}
+.applicationbox p{
+  font-size: 20px;
+}
+.contactbody{
+    margin-top: 15px;
+  }
+  
+  .contactform{
+    margin: auto;
+    text-align: center;
+    width: 95%;
+    padding: 5px;
+  }
+  
+  .form-label{
+    font-size: 22px;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .form-control{
+    outline: 0;
+    width: 80%;
+    height: 75px;
+    background: none;
+    border: solid #fff 2px;
+    border-style: none none solid none;
+    font-size: 20px;
+    color: white;
+    resize: none;
+    font-family: 'Chillax-Variable';
+    font-weight: 300;
+  }
+  
+  .form-control:focus{
+    outline: 0;
+    border: solid white 3px;
+    border-style: none none solid none;
+  }
+}
